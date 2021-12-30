@@ -38,7 +38,7 @@ Imagine we have the following items and we want to apply styling to them on hove
 
 The CSS above will only cover the nav-item anchors, It won’t be enough to cover the widget-item anchors.
 
-The reason is that the smallest child in this situation is not the anchor, but actually the <i> tag.
+The reason is that the smallest child in this situation is not the anchor, but actually the `<i>` tag.
 
 **i:hover**
 
