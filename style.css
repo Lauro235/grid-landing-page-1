@@ -1,0 +1,179 @@
+/* Font Imports */
+
+@font-face {
+	font-family: 'aquire';
+	src: url(fonts/aquire-original/Aquire-BW0ox.otf);
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+        font-family: 'aquire';
+        src: url(fonts/aquire-original/AquireBold-8Ma60.otf);
+        font-style: normal;
+        font-weight: bold;
+}
+
+
+/*
+=======================
+Variables
+=======================
+*/
+
+:root {
+        --aquire: normal normal normal 1rem/1.1rem 'aquire';
+        --aquire-bold: normal normal bold 3.5rem/3.6rem 'aquire';
+}
+
+/*
+=======================
+Set up
+=======================
+*/
+
+html,	body,	div,	span,	object,	iframe,
+h1,	h2,	h3,	h4,	h5,	h6,
+p,	blockquote,	pre,	abbr,	address,
+cite,	code,	del,	dfn,	em,	img,
+ins,	kbd,	q,	samp,	small,	strong,
+sub,	sup,	var,	b,	i,	dl,
+dt,	dd,	ol,	ul,	li,	fieldset,
+form,	label,	legend,	table,	caption,
+tbody,	tfoot,	thead,	tr,	th,	td,
+article,	aside,	canvas,	details,
+figcaption,	figure,	footer,	header,	hgroup,
+menu,	nav,	section,	summary,        a,
+time,	mark,	audio,	video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        color: black;
+        text-decoration: none;
+}
+html {
+        box-sizing: border-box;
+}
+
+*,*::before, *::after {
+        box-sizing: inherit;
+        list-style: none;
+}
+
+body {
+        font: var(--aquire);
+        background-color: #59007F;
+}
+
+/*
+===================
+Helper Classes
+===================
+*/
+/*Flex*/
+
+.flex {
+        display: flex;
+}
+
+.flex-center {
+        justify-content: center;
+        align-items: center;
+}
+
+.flex-column {
+        flex-direction: column;
+}
+
+
+.grid {
+        display: grid;
+}
+
+/*
+=======================
+Typography
+=======================
+*/
+
+h1 {
+        font: var(--aquire-bold);
+}
+
+/*
+=======================
+Layout
+=======================
+*/
+
+.container {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+}
+
+.nav-grid {
+        padding: 2rem;
+}
+
+.nav-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        gap: 1rem;
+}
+
+.nav-item {
+        color: grey;
+}
+
+a, i {
+        color: grey;
+}
+
+a:hover, a:focus, i:hover, a:focus>i {
+        color: beige;
+}
+
+main.hero {
+        background-image: url('images/mountain-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        outline: 2px solid black;
+}
+
+.hero-title {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        color: beige;
+        margin-left: 1rem;
+        padding: 1rem;
+}
+
+.hero-title>span {
+        color: grey
+}
+
+
+footer {
+        padding: 2rem;
+}
+
+ul.widget-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        gap: 1rem;
+}
+
+li.widget-item {
+        font-size: 2rem;
+}
+
+/*
+=======================
+Media Queries
+=======================
+*/
