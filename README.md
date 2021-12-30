@@ -5,11 +5,9 @@ A futuristic landing page utilising grid, a custom svg and a downloaded font
 
 The following are excellent resources I found as I developed this mini project.
 
-Freecodecamp grid projects for beginners - https://www.freecodecamp.org/news/learn-css-grid-by-building-5-layouts/
-
-Use downloaded fonts - https://www.youtube.com/watch?v=QhhYZJFOZnY&ab_channel=CalerEdwards
-
-Font property (w3 schools) - https://www.w3schools.com/cssref/pr_font_font.asp
+- Freecodecamp grid projects for beginners - https://www.freecodecamp.org/news/learn-css-grid-by-building-5-layouts/
+- Use downloaded fonts - https://www.youtube.com/watch?v=QhhYZJFOZnY&ab_channel=CalerEdwards
+- Font property (w3 schools) - https://www.w3schools.com/cssref/pr_font_font.asp
 
 ## Correctly Targeting Hover and focus states
 
